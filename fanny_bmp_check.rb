@@ -38,15 +38,14 @@ class MetasploitModule < Msf::Post
         end
         
         def run
-                                                             ##################  artifacts  ######################################
-                                                            #  From:  https://securelist.com/a-fanny-equation-i-am-your-father-stuxnet/68787
-                                                        	#
-                                							# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4
-                                							# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\Driver
-                                							# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter2
-                                							# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter3
-                                							# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter8
-                                                            ##################  artifacts  ######################################
+                                                                ##################  artifacts  ######################################
+                                                                # From:  https://securelist.com/a-fanny-equation-i-am-your-father-stuxnet/68787
+                                		                # HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4
+                                				# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\Driver
+                                				# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter2
+                                				# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter3
+                                				# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter8
+                                                                ##################  artifacts  ######################################
                                                             
                                 query =    'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\"ECELP4",'
                                 query += 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\Driver,'
