@@ -1,0 +1,47 @@
+##
+# located at post/windows/gather/forensics/fanny_bmp_check
+##
+
+meterpreter > 
+meterpreter > info post/windows/gather/forensics/fanny_bmp_check
+
+       Name: FannyBMP Registry Check
+     Module: post/windows/gather/forensics/fanny_bmp_check
+   Platform: Windows
+       Arch: 
+       Rank: Normal
+
+Provided by:
+  William M.
+
+Compatible session types:
+  Meterpreter
+
+Basic options:
+  Name     Current Setting  Required  Description
+  ----     ---------------  --------  -----------
+  SESSION                   yes       The session to run this module on.
+
+Description:
+  This module searches for the Fanny.bmp worm - related registry keys
+
+References:
+  https://securelist.com/a-fanny-equation-i-am-your-father-stuxnet/68787
+
+
+
+Module options (post/windows/gather/forensics/fanny_bmp_check):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on.
+
+meterpreter > run post/windows/gather/forensics/fanny_bmp_check
+
+[*] Searching registry on WORKSTATION1 for Fanny.bmp artifacts.
+[+] WORKSTATION1: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\Driver found in registry.
+[+] WORKSTATION1: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter2 found in registry.
+[+] WORKSTATION1: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter3 found in registry.
+[+] WORKSTATION1: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\acm\ECELP4\filter8 found in registry.
+[*] WORKSTATION1: 4 result(s) found in registry.
+meterpreter > 
