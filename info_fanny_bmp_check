@@ -1,0 +1,23 @@
+
+       Name: FannyBMP Registry Check
+     Module: post/windows/gather/forensics/fanny_bmp_check
+   Platform: Windows
+       Arch: 
+       Rank: Normal
+
+Provided by:
+  William M.
+
+Compatible session types:
+  Meterpreter
+
+Basic options:
+  Name     Current Setting  Required  Description
+  ----     ---------------  --------  -----------
+  SESSION                   yes       The session to run this module on.
+
+Description:
+  This module searches for the Fanny.bmp worm - related registry keys
+
+References:
+  https://securelist.com/a-fanny-equation-i-am-your-father-stuxnet/68787
