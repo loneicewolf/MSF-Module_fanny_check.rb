@@ -13,7 +13,7 @@ class MetasploitModule < Msf::Post
 
         def initialize(info={})
                 super( update_info( info,
-                                 'Name' => 'FannyBMP Registry Check',
+                                 'Name' => 'FannyBMP or Dementiawheel Detection Registry Check', # Shorten name a bit.
                                  'Description' => %q{This module searches for the Fanny.bmp worm related registry keys},
                                  'License' => MSF_LICENSE,
                                  'Author' => [ 'William M.'],
